@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adjacent and General Sibling</title>
+    <style>
+        /* Adjacent Sibling */
+        p+p {
+            color: goldenrod;
+        }
+
+        /* General Sibling */
+        p~p {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adjacent and General Sibling</h1>
+
+    <div>
+        <p>P element</p>
+        <p>P element: Selected by Adjacent and General Sibling</p>
+    </div>
+
+    <div>
+        <p>P element</p>
+        <h2>H2 heading between ps</h2>
+        <p>P element: selected by General Sibling </p>
+    </div>
+</body>
+
+</html>
