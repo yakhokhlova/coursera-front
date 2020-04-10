@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <title>Box Model</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            ;
+            box-sizing: border-box;
+        }
+
+        body {
             background-color: grey;
         }
 
@@ -16,13 +19,13 @@
             background-color: blue;
             padding: 10px 30px 10px 30px;
             border: 20px solid black;
-            margin: 40px;
             width: 300px;
-            box-sizing: border-box;
+            margin-top: 50px;
         }
 
         #content {
-            background-color: #90EE90; /* green */
+            background-color: #90EE90;
+            /* green */
         }
 
         h1 {
