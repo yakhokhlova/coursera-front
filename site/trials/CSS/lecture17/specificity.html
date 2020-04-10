@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Specificity in CSS</title>
+
+    <style>
+        /* Specificity 0012 */
+        header.navigation p {
+            color: blue;
+        }
+
+        /* Specificity 0011 */
+        p.blurb {
+            color: red;
+        }
+
+        /* Specificity 0001 */
+        /* rule marked with "!important" wins reguarding the score */
+        p {
+            color: green !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navigation">
+        <p class="blurb"> Some text</p>
+    </header>
+</body>
+
+</html>
